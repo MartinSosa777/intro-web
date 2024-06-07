@@ -12,4 +12,5 @@ function main() {
     const usuarios = JSON.parse(localStorage.getItem("usuariosRegistrados")) || [];
     usuarios.push(nuevoUsuario)
     localStorage.setItem("usuariosRegistrados", JSON.stringify(usuarios))
+    console.log(usuarios);
 }
